@@ -1,0 +1,78 @@
+.header{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    background-color: white;
+}
+.header__left{
+    display: flex;
+    align-items: center;
+}
+.header__input{
+    display: flex;
+    align-items: center;
+    background-color: #eff2f5;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 89px;
+}
+.header__input > input {
+    border: none;
+    background-color: transparent;
+    outline-width: 0;
+}
+
+.header__left > img{
+    height: 50px;
+}
+
+.header__center{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+.header__option{
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+.header__optionActive{
+    color: #2e81f4;
+    border-bottom: 4px solid #2e81f4;
+}
+
+.header__right{
+    display: flex;
+}
+.header__info{
+    display: flex;
+    align-items: center;
+}
+.header__info > h4{
+    margin-left: 10px;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .header__left, .header__right {
+      /* display: none; */
+    }
+    .header__option{
+        padding: 0;
+    }
+    .MuiSvgIcon-root {
+        font-size: 28px !important ;
+    }
+    .MuiAvatar-root {
+        height: 20px !important ;
+        width:  20px !important ;
+    }
+    .header__input > input{
+        display: none;
+    }
+    .header__right {
+        display: none;
+    }
+  }

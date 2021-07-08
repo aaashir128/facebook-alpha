@@ -1,0 +1,14 @@
+.feed{
+    display: flex;
+    position: relative;
+    height: 80%;
+    flex-direction: column;
+    flex: 0.6;
+}
+
+@media only screen and (max-width: 600px) {
+    .feed{
+        width: 100%;
+        
+    }
+  }

@@ -1,0 +1,10 @@
+.widgets{
+    flex-direction: 0.2;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .widgets{
+        display: none;
+    }
+  }

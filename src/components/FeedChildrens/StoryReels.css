@@ -1,0 +1,69 @@
+.storyReels{
+    display: flex;
+    /* flex: 1; */
+ 
+
+}
+.addStoryForm{
+    position: relative;
+    background-position: top;
+    width: 120px;
+    height: 200px;
+    box-shadow: 0 5px 17px -7px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    margin-right: 10px;
+    transition: transform 100ms ease-in;
+    cursor: pointer;
+}
+
+.addStoryForm > input {
+    display: none;
+}
+.addStory{  
+   width: 100%;
+   height: 60%;
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+}
+
+.addStoryForm:hover {
+    transform: scale(1.07);
+}
+
+.addStoryForm > button {
+    display: none;
+}
+
+.addStory__bottom{
+    display: flex;
+    justify-content: center;
+    flex: 0.3;
+
+}
+.addStory__bottom > h4{
+
+    position: absolute;
+    bottom: 10px;
+    /* left: 10px; */
+    color: black ;
+    font-size: 14px;
+    font-weight: 500;
+}
+.addStory__bottom > .MuiSvgIcon-root{
+    position: relative;
+    top: -15px;
+    color: white;
+    background-color: blue;
+    border-radius: 99px;
+    border: 4px solid white;
+}
+
+@media only screen and (max-width: 600px) {
+   .storyReels {
+       overflow-x: auto;
+   } 
+   /* .storyReels > .stories{
+    width: 100%;
+   } */
+  }
